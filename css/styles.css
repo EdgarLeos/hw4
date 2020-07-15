@@ -1,0 +1,135 @@
+body {
+    background-color:#140100;
+    color:white;
+    background-image:url("../img/cubes.png");
+}
+
+header, nav{
+    text-align: center;
+}
+
+nav a{  /* links within "nav" container */
+    padding:15px;
+    padding-bottom:4px;
+    font-size: 1.8em;
+    text-decoration: none; /*removes underline */
+    color:white; /* by default, links are blue */
+}
+
+nav a:hover { /*pseudo class*/
+    text-shadow: 0 0 5px #FF0000, 0 0 5px #0000FF;
+    font-size: 2.5em;
+    transition: .9s; /*transition effect*/
+}
+
+main {
+    display:flex;
+    justify-content: center;
+    text-align:left;
+    font-size: 1.5em;
+}
+
+table {
+    border: none;
+    border-spacing: 0px;
+}
+
+td {
+    padding-right: 10px;
+    font-size: 1em;
+    text-align: center;
+}
+
+td strong {
+    color:white;
+}
+#content{
+    display:flex;
+}
+#table-header {
+    background-color:#900C3F;
+}
+
+.table-row-odd {
+    background-color: #C1C1C1;
+}
+.table-row-even {
+    background-color: #979797;
+}
+.table-description{
+    text-align:left;
+    color:black;
+}
+#table-content{
+    color:black;
+    font-family: 'Orbitron', sans-serif;
+}
+h1 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 4em;
+    margin-bottom: 0px;
+    color:white;
+    text-shadow: 2px 2px #ff0000;
+}
+
+h2
+{
+    text-shadow: 2px 2px #ff0000;
+    color:white;
+}
+
+#index_footer{
+    
+    justify-content: center;
+    display:flex;
+}
+#index_footer_text{
+   
+    text-align: center;
+    font-size: .8em;
+    color:white;
+    padding: 80px 0;
+}
+
+#whatis-content{
+    text-align:right;
+}
+
+#nav_selected{
+     text-shadow: 0 0 5px #FF0000, 0 0 5px #0000FF;
+     font-weight: bold;
+}
+dt {
+  font-weight: bold;
+  text-shadow: 0 0 5px #FF0000, 0 0 5px #0000FF;
+}
+
+dd {
+  margin-left: 2em;
+}
+
+#adv-img
+{
+    padding: 80px 0;
+}
+/* unvisited link */
+.sources:link {
+    color:white;
+  text-shadow: 0 0 5px #FF0000, 0 0 5px #0000FF;
+  text-decoration: none;
+}
+
+/* visited link */
+.sources:visited {
+  color: green;
+}
+
+/* mouse over link */
+.sources:hover {
+  color: hotpink;
+}
+
+/* selected link */
+.sources:active {
+  color: blue;
+}
