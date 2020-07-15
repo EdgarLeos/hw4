@@ -1,25 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset = "utf-8" />
-        <title> 5G Technology</title>
-        <link href="css/styles.css" rel="stylesheet" type="text/css"/>
-        <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
-    </head>
-    <body >
-        <header>
-            <h1>5G Technology</h1>
-            <h2>The Future is Here</h2>
-        </header>
-        <hr />
-        <nav>
-           <a  href="/">Home</a>
-            <a  href="/history">The History</a>
-            <a href="/whatis">What is 5G?</a>
-            <a href="/advantages">Advantages</a>
-            <a id = "nav_selected" href="/sources">Sources</a>
-        </nav>
-        
+<%- include('partials/header.ejs')%>
         <main>
             <figure>
                 <img src = "img/5G_index_correct.png" alt= "https://www.nokia.com/networks/5g/" />
@@ -34,21 +13,11 @@
                 <p><a class= "sources" href = "https://www.pcmag.com/article/345387/what-is-5g" target="_blank">Qualcomm What is 5G</a></p>
 
                 <p><a class= "sources" href = "https://www.qualcomm.com/news/onq/2017/08/02/demystifying-3gpp-insiders-perspective-how-4g-and-5g-standards-get-created" target="_blank">Qualcomm 4G and 5G Standards</a></p>
-            </div>
-        </main>
-        <footer>
-            <hr>
-            <div id="index_footer">
-              <figure>
-                  <img src="img/csumb_logo.png" alt= "CSUMB Logo" />
-              </figure>
-                <div>
-                    <div id = "index_footer_text">
-                        CST336 Internet Programming. 2020&copy; Leos.<br/>
-                        <strong>Homework week 1. </strong> Hyper Text Markup Langauge and Cascading Style Sheets.
-                    </div>
-                </div>
-            </div>
-        </footer>
-    </body>
-</html>
+            </div>    
+        </main>        
+            <script>
+            $("document").ready(function() {
+                $("#sources").addClass("current_page");
+            });
+            </script>
+ <%- include('partials/footer.ejs')%>

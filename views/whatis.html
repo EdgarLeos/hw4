@@ -1,25 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset = "utf-8" />
-        <title> 5G Technology</title>
-        <link href="css/styles.css" rel="stylesheet" type="text/css"/>
-        <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
-    </head>
-    <body >
-        <header>
-            <h1>5G Technology</h1>
-            <h2>The Future is Here</h2>
-        </header>
-        <hr />
-        <nav>
-           <a  href="/">Home</a>
-            <a  href="/history">The History</a>
-            <a id = "nav_selected" href="/whatis">What is 5G?</a>
-            <a href="/advantages">Advantages</a>
-            <a  href="/sources">Sources</a>
-        </nav>
-        
+<%- include('partials/header.ejs')%>
         <main>
             <div id="whatis-content">
                 <p>5G is the next network evolution, some might say the most important one too. It is being developed by 
@@ -33,21 +12,10 @@
             <figure>
                 <img src = "img/5g-big.png" alt= "https://news.itu.int/wrc-19-opportunity-to-bridge-digital-divide-5g/" />
             </figure>
-            
-        </main>
-        <footer>
-            <hr>
-            <div id="index_footer">
-              <figure>
-                  <img src="img/csumb_logo.png" alt= "CSUMB Logo" />
-              </figure>
-                <div>
-                    <div id = "index_footer_text">
-                        CST336 Internet Programming. 2020&copy; Leos.<br/>
-                        <strong>Homework week 1. </strong> Hyper Text Markup Langauge and Cascading Style Sheets.
-                    </div>
-                </div>
-            </div>
-        </footer>
-    </body>
-</html>
+       </main>
+            <script>
+            $("document").ready(function() {
+                $("#whatis").addClass("current_page");
+            });
+            </script>
+ <%- include('partials/footer.ejs')%>

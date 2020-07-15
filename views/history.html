@@ -1,25 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset = "utf-8" />
-        <title> 5G Technology</title>
-        <link href="css/styles.css" rel="stylesheet" type="text/css"/>
-        <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
-    </head>
-    <body >
-        <header>
-            <h1>5G Technology</h1>
-            <h2>The Future is Here</h2>
-        </header>
-        <hr />
-        <nav>
-           <a  href="/">Home</a>
-            <a id = "nav_selected" href="/history">The History</a>
-            <a href="/whatis">What is 5G?</a>
-            <a href="/advantages">Advantages</a>
-            <a href="/sources">Sources</a>
-        </nav>
-        
+<%- include('partials/header.ejs')%>
         <br /><br />
         
         <main>
@@ -58,21 +37,10 @@
                 <img src = "img/2g-4g.png" alt= "https://www.newegg.com/p/23B-000R-002A0 , " >
             </figure>
         </div>
-           
         </main>
-        <footer>
-            <hr>
-            <div id="index_footer">
-              <figure>
-                  <img src="img/csumb_logo.png" alt= "CSUMB Logo" />
-              </figure>
-                <div>
-                    <div id = "index_footer_text">
-                        CST336 Internet Programming. 2020&copy; Leos.<br/>
-                        <strong>Homework week 1. </strong> Hyper Text Markup Langauge and Cascading Style Sheets.
-                    </div>
-                </div>
-            </div>
-        </footer>
-    </body>
-</html>
+            <script>
+            $("document").ready(function() {
+                $("#history").addClass("current_page");
+            });
+            </script>
+  <%- include('partials/footer.ejs')%>
