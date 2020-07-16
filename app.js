@@ -1,27 +1,36 @@
 const express = require("express");
 const app = express();
+
+var faker = require('faker');
+
+
 app.engine('html', require('ejs').renderFile);
 app.use(express.static("public"));
 
 
 //routes
 app.get("/", function(req, res){
-    res.render("index.html");
+    var catchPhrase = faker.company.catchPhrase();
+    res.render("index.ejs", {"catchPhrase":catchPhrase});
 });
 
 app.get("/advantages", function(req,res){
-    res.render("advantages.html")
+    var catchPhrase = faker.company.catchPhrase();
+    res.render("advantages.ejs", {"catchPhrase":catchPhrase});
 })
 
 app.get("/history", function(req,res){
-    res.render("history.html")
+    var catchPhrase = faker.company.catchPhrase();
+    res.render("history.ejs", {"catchPhrase":catchPhrase});
 })
 
 app.get("/sources", function(req,res){
-    res.render("sources.html")
+     var catchPhrase = faker.company.catchPhrase();
+    res.render("sources.ejs", {"catchPhrase":catchPhrase});
 })
 app.get("/whatis", function(req,res){
-    res.render("whatis.html")
+    var catchPhrase = faker.company.catchPhrase();
+    res.render("whatis.ejs", {"catchPhrase":catchPhrase});
 })
 //start server
 app.listen(process.env.PORT, process.env.IP, function(){
